@@ -1,0 +1,25 @@
+Source: python-descartes
+Section: python
+Priority: optional
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders: Johan Van de Wauw <johan.vandewauw@gmail.com>
+Build-Depends: debhelper (>= 10~),
+               dh-python,
+               python3-all,
+               python3-nose,
+               python3-matplotlib,
+               python3-setuptools,
+               python3-shapely
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/debian-gis-team/python-descartes/
+Vcs-Git: https://salsa.debian.org/debian-gis-team/python-descartes.git
+Homepage: https://bitbucket.org/sgillies/descartes
+
+Package: python3-descartes
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Matplotlib extension to work with geometric objects (Python3)
+ Descartes allows the usage of geometric objects as matplotlib paths
+ and patches.
+ .
+ This is the Python 3 version of the library.
